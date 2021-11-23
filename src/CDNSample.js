@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./test1.module.css";
 function CDNSample() {
   
@@ -10,12 +10,12 @@ function CDNSample() {
 
   var list = [2, 4, 6]
 //Example 1. check if all numbers are even
-var result = window._.every(list, function(num) { return (num % 2 == 0) });
+var result = window._.every(list, function(num) { return (num % 2 === 0) });
 console.log(result);
 
 list = [1, 2, 4, 6]
 //Example 2. check if all numbers are even
-var result = window._.every(list, function(num) { return (num % 2 == 0) });
+result = window._.every(list, function(num) { return (num % 2 === 0) });
 console.log(result);
   
   return (
